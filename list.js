@@ -4,6 +4,8 @@ const form = document.getElementById('click');
 const input = form.querySelector('input');
 
 
+
+
 form.addEventListener('submit', (e) => {
     img.setAttribute("id", "hidden")
     e.preventDefault();
@@ -18,6 +20,12 @@ form.addEventListener('submit', (e) => {
    const div = document.createElement('DIV');
    li.appendChild(div);
    div.setAttribute('class', 'checkbtn');
+
+   $('div').on('click', function(){
+    $('.list_').remove();
+    img.setAttribute("id", "image")
+
+    })
 
    const span =document.createElement('SPAN')
    span.textContent = text
@@ -42,8 +50,6 @@ icon.addEventListener('click', () => {
     }
 
 })
-
-
 
 
 
