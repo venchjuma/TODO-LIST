@@ -23,7 +23,6 @@ body {
   display: none;
 }
 
-
 button {
   width: 25px;
   height: 25px;
@@ -107,6 +106,19 @@ ul {
   padding-right: 168px;
   padding-bottom: 8px;
   padding-top: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.list_2{
+  width: 10%;
+  box-sizing: border-box;
+  border: none;
+  position: fixed;
+  text-indent: 35px;
+  font-size: 17.1px;
+  color: rgb(49, 47, 47);
+  cursor: pointer;
 }
 
 .edit{
@@ -140,6 +152,7 @@ ul {
     height: 93vh;
     padding: 0px 20px;
   }
+
   input {
     margin-right: 20px;
   }
@@ -162,7 +175,8 @@ ul {
 
 .checkbtn:hover {
   background-image: url(./check.svg);
-  color: #333;
+  filter: var(--filter);
+  color: black;
 }
 
 
